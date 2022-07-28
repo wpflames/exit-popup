@@ -9,7 +9,7 @@ const CookieService = {
 
             // Expire 1 hour
             date.setTime(date.getTime() + 1 * 3600 * 1000);
-            expires = '; expires=' + date.toUTCString();
+            expires = '; expires=' + date.toString();
         }
 
         document.cookie = name + '=' + (value || '')  + expires + ';';
